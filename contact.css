@@ -1,0 +1,94 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(c:/html/contact.jfif);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 30px;
+	margin-right: 4px;
+	word-spacing: 26px;
+}
+ul li{
+	display: inline-block;
+	padding-right: 80px;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color:#000;
+}
+.logo img{
+	width: 75px;
+	height: 75px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 8px;
+}
+.active{
+	color:#19dafa !important;
+}
+.title{
+	padding-top: 50px;
+	font-family: sans-serif;
+}
+.title h1{
+	color: #fff;
+	font-size: 50px;
+}
+form{
+	margin-top: 50px;
+	transition: all 4s ease-in-out;
+}
+.form-control{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid grey;
+	color:#fff;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+.input{
+	height: 45px;
+
+}
+form .submit{
+	background: orange;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-top: 20px;
+}
+form.submit:hover{
+	background-color: #f44336;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
