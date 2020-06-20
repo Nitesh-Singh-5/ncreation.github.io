@@ -1,0 +1,75 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(c:/html/contact.jfif);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 30px;
+	margin-right: 4px;
+	word-spacing: 26px;
+}
+ul li{
+	display: inline-block;
+	padding-right: 80px;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color:#000;
+}
+.logo img{
+	width: 75px;
+	height: 75px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 8px;
+}
+.active{
+	color:#19dafa !important;
+}
+.title{
+	padding-top: 50px;
+	font-family: sans-serif;
+}
+.title h1{
+	color: #fff;
+	font-size: 70px;
+}
+.title h2{
+	color: #fff;
+	font-size: 58px;
+}
+.footer{
+	text-align: center;
+	padding-top: 140px;
+	font-weight: bold;
+	color: white;
+	font-family: Arial;
+	letter-spacing: 1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
