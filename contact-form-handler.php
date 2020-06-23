@@ -1,18 +1,30 @@
 <?php
-	$name= $_POST['name'];
-	$visitor_email = $_POST['email'];
-	$message = $_POST['message'];
 
-	$email_form = 'niteshs.rajput@gmail.com';
-	$email_subject = "New Form Submission";
-	$email_body = "User Name: $name.\n".
-					"User_email: $visitor_email.\n";
-					"User Message:$message.\n";
+$con =  mysqli_connect('localhost','root');
+if($con){
+	echo "connection successfull";
+}else{
+	echo "no connection";
+}
 
 
-	$to = "ns98738698@gmail.com";
-	$headers = "form: $email_form\r\n";
-	$headers ="Reply-to : $visitor_email\r\n";
-	mail($to,$email_subject,$email_body,$headers);
-	header("location: contact.html")
+mysqli_select_db($con,'namedata');
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+
+$query = " insert into detailsinfo (name,email,message)
+values('$name','$email','$message')";
+
+mysqli_query($con, $query);
+
+
+echo "$query";
+
+mysqli_query($con,' $query');
+
+
+header('location:contact.html');
+
 ?>
