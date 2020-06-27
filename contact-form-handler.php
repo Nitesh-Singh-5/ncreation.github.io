@@ -1,30 +1,20 @@
 <?php
 
-$con =  mysqli_connect('localhost','root');
-if($con){
-	echo "connection successfull";
-}else{
-	echo "no connection";
-}
-
-
-mysqli_select_db($con,'namedata');
 $name = $_POST['name'];
-$email = $_POST['email'];
+$visitor_email = $_POST['email'];
 $message = $_POST['message'];
 
+$email_from = 'ncreations@nitesh.com';
+$email_subject ="New Form Submission" ;
+$email_body = "User Name: $name.\n".
+		"User Email : $visitor_email.\n".
+		"User Message : $message.\n";
 
-$query = " insert into detailsinfo (name,email,message)
-values('$name','$email','$message')";
-
-mysqli_query($con, $query);
-
-
-echo "$query";
-
-mysqli_query($con,' $query');
-
-
+$to = "ns98738698@gmail.com";
+$headers = "From: $email_from\r\n";
+$headers = "Reply-To: $visitor_email\r\n";
+mail($to,$email_subject,$email_body,$headers)
+		
 header('location:contact.html');
 
 ?>
